@@ -4,6 +4,8 @@
  */
 package projeto.xadrez;
 
+import Tabuleiro.Posicao;
+
 /**
  *
  * @author USer
@@ -14,7 +16,8 @@ public class ProjetoXadrez {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Posicao p = new Posicao(3, 5);
+        System.out.println(p);
     }
     
 }
