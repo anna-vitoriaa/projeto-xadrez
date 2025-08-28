@@ -5,6 +5,9 @@
 package projeto.xadrez;
 
 import Tabuleiro.Posicao;
+import Tabuleiro.Tabuleiro;
+import xadrez.PartidaDeXadrez;
+import xadrez.PecaDeXadrez;
 
 /**
  *
@@ -16,8 +19,10 @@ public class ProjetoXadrez {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Posicao p = new Posicao(3, 5);
-        System.out.println(p);
+        Tabuleiro tab = new Tabuleiro(8, 8);
+        PartidaDeXadrez px = new PartidaDeXadrez();
+        UI.imprimirTabuleiro(px.MostrarPecas());
+        
     }
     
 }
